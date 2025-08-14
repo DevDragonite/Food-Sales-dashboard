@@ -80,8 +80,8 @@ elif option == "Age & Income Analysis":
         
         corr_matrix = df[['Age', 'Monthly Income']].corr()
         fig_corr = px.imshow(corr_matrix, text_auto=True, color_continuous_scale='RdBu_r', 
-                            labels=dict(x="Variable", y="Variable", color="Correlación"),
-                            title="Matriz de Correlación")
+                            labels=dict(x="Variable", y="Variable", color="Correlation"),
+                            title="Correlation Matrix")
         fig_corr.update_layout(plot_bgcolor='white', font_color='black')
         st.plotly_chart(fig_corr, use_container_width=True)
 
@@ -172,4 +172,5 @@ elif option == "Final Conclusions":
         1. **Improve Experience for High-Income Customers**: It is crucial to investigate the reasons for their dissatisfaction. This may include improving product quality, customer service, or personalization options to align the service with their high expectations.
         2. **Retain Low-Income Customers**: Since this group shows higher satisfaction, loyalty programs should be implemented to maintain their loyalty and turn them into brand advocates.
         3. **Targeted Marketing and Segmented Products**: Use demographic findings (occupation, marital status, and segment) to create more effective marketing campaigns and develop products or services that meet the specific needs of the most valuable customer segments.
+
         """)
