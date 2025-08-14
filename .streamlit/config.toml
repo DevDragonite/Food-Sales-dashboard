@@ -1,1 +1,14 @@
+[theme]
+# Color de acento para botones, etc.
+primaryColor="#33A1E0"
 
+# Fondo de la página en azul oscuro
+backgroundColor="#154D71"
+
+# Fondo de los widgets (select box) en blanco
+secondaryBackgroundColor="#FFFFFF"
+
+# Color de texto principal en toda la app (se arregla en el siguiente paso)
+textColor="#FFFFFF"
+
+font="sans serif"
